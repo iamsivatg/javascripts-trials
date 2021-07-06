@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Festive", cursive;
+  background-color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+}
+
+.screen {
+  cursor: pointer;
+  width: 40%;
+  background-color: black !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.controls {
+  background: #333;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .screen .controls {
+    width: 90%;
+  }
+}

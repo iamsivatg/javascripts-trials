@@ -2,43 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Form Validation</title>
+    <title>Custom Video Player</title>
+    <link
+      rel="stylesheet"
+      href="css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <div class="container">
-      <form id="form" class="form">
-        <h2>Register with us</h2>
-        <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter username" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="Email">Email</label>
-          <input type="text" id="Email" placeholder="Enter Email" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="Password">Password</label>
-          <input type="Password" id="Password" placeholder="Enter Password" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="Password2">Confirm password</label>
-          <input
-            type="Password"
-            id="Password2"
-            placeholder="Enter Password Again"
-          />
-          <small>Error message</small>
-        </div>
-        <button type="button">Submit</button>
-      </form>
+    <h1>Custom Video Player</h1>
+    <video
+      src="videos/Sample MP4 Video File for Testing.mp4"
+      id="video"
+      class="screen"
+    ></video>
+    <div class="controls">
+      <button class="btn" id="play">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+      <button class="btn" id="stop">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <span class="timestamp" id="timestaamp">00:00</span>
     </div>
-
     <script src="scripts.js"></script>
   </body>
 </html>
